@@ -16,6 +16,42 @@
             let campoResultado = document.getElementById("resultado")
             campoResultado.value = resultadoDaSoma
         }
+
+            function subtrair () {
+            let campoN1 = document.getElementById("n1")
+            let valorN1 = parseInt(campoN1.value)
+
+            let campoN2 = document.getElementById("n2")
+            let valorN2 = parseInt(campoN2.value)
+
+            let resultadoDaSubtração = valorN1 - valorN2
+            let campoResultado = document.getElementById("resultado")
+            campoResultado.value = resultadoDaSubtração
+        }
+
+        function multiplicação () {
+            let campoN1 = document.getElementById("n1")
+            let valorN1 = parseInt(campoN1.value)
+
+            let campoN2 = document.getElementById("n2")
+            let valorN2 = parseInt(campoN2.value)
+
+            let resultadoDaMultiplicação = valorN1 * valorN2
+            let campoResultado = document.getElementById("resultado")
+            campoResultado.value = resultadoDaMultiplicação
+        }
+
+        function divisão () {
+            let campoN1 = document.getElementById("n1")
+            let valorN1 = parseInt(campoN1.value)
+
+            let campoN2 = document.getElementById("n2")
+            let valorN2 = parseInt(campoN2.value)
+
+            let resultadoDaDivisão = valorN1 / valorN2
+            let campoResultado = document.getElementById("resultado")
+            campoResultado.value = resultadoDaDivisão
+        }
     </script>
 </head>
 <body>
@@ -26,6 +62,8 @@
     <input type="number" readonly id="resultado"> <br>
     <button onclick="somar();">+</button>
     <button onclick="subtrair();">-</button> 
+    <button onclick="multiplicação();">*</button>
+    <button onclick="divisão();">/</button> 
         
 </body>
 </html>
