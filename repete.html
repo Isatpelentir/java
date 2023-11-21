@@ -9,15 +9,126 @@
             for (var i = 0; i < 11; i++){
                 document.write(i + "<br>")
             } 
-
+        }
+        function c10a1(){
             for (var i = 10; i > 0; i--){
                 document.write(i + "<br>")
             } 
         }
+        function cPar(){
 
+            for (var i = 0; i < 21; i=i+2){
+                document.write(i + "<br>")
+            } 
+        }
+        function cImpar(){
+            for (var i = 1; i < 21; i=i+2){
+                document.write(i + "<br>")
+            } 
+        }
+        function c1a100(){
+            for (var i = 0; i <101; i=i+5){
+                document.write(i + "<br>")
+            } 
+        }
+        function c1a30(){
+            for (var i = 0; i < 31; i=i+3){
+                document.write(i + "<br>")
+            } 
+        }
+
+        function cTotal(){
+            var soma = 0
+            for (var i = 0; i < 101; i++){
+                document.write(i + "" + soma + "<br>")
+                soma = soma + i
+            }
+            document.write("Soma final = "+ soma + "<br>")
+        }
+        function c1a10while (){
+            var n=1
+            while (n<=10) {
+                document.write(n);
+                document.write("<br>");
+                n=n=1;
+            }
+        }
+        function contagem() {
+            var n=10 
+            while (n>=1) {
+                document.write(n);
+                document.write("<br>");
+                n=n-1
+            }
+        }
+        function ca50() {
+            var n=0 
+            while (n<=50) {
+                document.write(n);
+                document.write("<br>");
+                n=n+5
+            }
+        }
+        function sa20(){
+            var soma = 0
+            var n = 0
+            while (n < 21) {
+                if(soma + n > 101) {
+                    break
+                } else {
+                    soma = soma + n
+                }
+                n = n + 1
+            } 
+            document.write("soma = " + soma)      
+         }
+
+       function cpa25() {
+        var n=0
+        while (n<=25) {
+            document.write(n);
+            document.write("<br>");
+            n=n+2
+        }
+       }
+       function idade() {
+        var idade = prompet("Diga ima idade!");
+        while (idade !=16) {
+            idade = prompet ("Errou! Diga outra idade!");
+        }
+        alert("Acertou! Era 16 mesmo!")
+       }
+       function valores(){
+        var numeros = [9, 21, 7, 15];
+        var cars = ["BMW", "Volvo", "Ford", "Fiat", "Audi", "ah"];
+
+        for (let index = 0; index < array.length; index++) {
+            const element = cars[index];
+            document.write(element + "<br>")
+            
+        }
+        
+       }
+
+        
     </script>
 </head>
 <body>
-    <input type="button" value="Enviar" onclick="contar()">
+    <input type="button" value="contar até 10" onclick="contar()"><br>
+    <input type="button" value="contar até 0" onclick="c10a1()"><br>
+    <input type="button" value="pares até 20" onclick="cPar()"><br>
+    <input type="button" value="impares até 20" onclick="cImpar()"><br>
+    <input type="button" value="multiplos de 5" onclick="c1a100()"><br>
+    <input type="button" value="tabuada do 3" onclick="c1a30()"><br>
+    <input type="button" value="soma total até 100" onclick="cTotal()"><br>
+    <input type="button" value="while" onclick="c1a10while()"><br>
+    <input type="button" value="contagem regressiva" onclick="contagem()"><br>
+    <input type="button" value="tabuada do 5" onclick="ca50()"><br>
+    <input type="button" value="soma até 20" onclick="sa20()"><br>
+    <input type="button" value="pares até 25" onclick="cpa25()"><br>
+    <input type="button" value="adivinhe a idade" onclick="idade()"><br>
+    <input type="button" value="valores" onclick="valores()"><br>
+
+
 </body>
 </html>
