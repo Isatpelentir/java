@@ -1,7 +1,7 @@
 function trocarFrase(){
     var fraseAtual=document.getElementById("frase");
     fraseAtual.innerHTML= "Qualquer frase!";
-    fraseAtual.style.color= "lightblue";
+    fraseAtual.style.color= "blue";
     fraseAtual.style.fontSize= "25px";
     fraseAtual.style.backgroundColor= "lightpink";
     document.body.style.backgroundColor= "purple";

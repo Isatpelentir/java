@@ -3,9 +3,14 @@
 }
 
 .h1_2 {
-    background-color: lavender;
+    background-color: rgb(151, 151, 243);
 }
 
 img {
     width: 1000px;
+}
+
+a {
+    color: mediumslateblue;
+    text-decoration: none;
 }
