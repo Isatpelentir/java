@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <script>
+        function contar(){
+            var medias = [];
+            var m1 = prompt("Diga a média do 1º tri");
+            var m2 = prompt("Diga a média do 2º tri");
+
+            medias[0] = m1;
+            medias[1] = m2;
+            var soma = 0.0;
+            for (var i = 0; i < medias.length; i++) {
+                var nota = medias[i];
+                soma = soma + parseFloat(nota);
+            }
+
+            var m3 = 18.0 - soma;
+            if (m3 < 10.0) {
+                alert("Você precisa alcançar " + m3);
+            } else {
+                alert("Não deu. Precisaria de " + m3 + ". Está reprovado!");
+            }
+        }
+        function perguntar(){
+            var numeros=[];
+            var n1 = prompt("Diga um número!")
+            var n2 = prompt("Diga um número!")
+            var n3 = prompt("Diga um número!")
+            var n4 = prompt("Diga um número!")
+            var n5 = prompt("Diga um número!")
+
+            numeros[0] = n1;
+            numeros[1] = n2;
+            numeros[2] = n3;
+            numeros[3] = n4;
+            numeros[4] = n5;
+
+            for ( var i = 0; i < numeros.length; i++){
+                document.write("<br>");
+
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" value="Sobre as médias" onclick="contar()"><br>
+    <input type="button" value="Imprimir números" onclick="perguntar()"><br>
+</body>
+</html>
